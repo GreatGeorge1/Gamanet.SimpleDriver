@@ -1,0 +1,15 @@
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.deps.json
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.runtimeconfig.json
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.runtimeconfig.dev.json
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.AssemblyInfoInputs.cache
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.AssemblyInfo.cs
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.csprojAssemblyReference.cache
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.dll
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.pdb
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/bin/Debug/netcoreapp3.1/System.IO.Pipelines.dll
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.csproj.CopyComplete
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.dll
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.pdb
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/bin/Debug/netcoreapp3.1/Autofac.dll
+/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
