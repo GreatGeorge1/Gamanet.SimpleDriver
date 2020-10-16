@@ -2,15 +2,15 @@ using System;
 using System.Buffers;
 using System.Collections.Generic;
 using System.IO.Pipelines;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using DevStuff.Interfcaces;
 
 namespace DevStuff
 {
     public partial class Transport : ITransport<Message>
     {
+        private readonly Parser parser = new Parser();
         private bool isDisposed;
         private readonly SemaphoreSlim semaphore = new SemaphoreSlim(1);
         private readonly Pipe pipe = new Pipe();
@@ -84,19 +84,31 @@ namespace DevStuff
                 SequencePosition examined = buffer.End;
                 try
                 {
-                    if (TryParseMessage(ref buffer, out Message message))
+                    if (parser.TryParse(ref buffer, out Message message, out int bConsumed, GetName()))
                     {
-                        consumed = buffer.GetPosition(message.Length);
+                        // A single message was successfully parsed so mark the start as the
+                        // parsed buffer as consumed. TryParseMessage trims the buffer to
+                        // point to the data after the message was parsed.
+                        consumed = buffer.GetPosition(bConsumed);
+
+                        // Examined is marked the same as consumed here, so the next call
+                        // to ReadSingleMessageAsync will process the next message if there's
+                        // one.
                         examined = consumed;
-                        foreach (var observer in observers)
+                        Console.WriteLine();
+                        if (!(message is null))
                         {
-                            observer.OnNext(message);
+                            foreach (var observer in observers)
+                            {
+                                observer.OnNext(message);
+                            }
                         }
                     }
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e.Message);
+                    Console.WriteLine(e);
+
                     foreach (var observer in observers)
                     {
                         observer.OnError(e);
@@ -109,18 +121,7 @@ namespace DevStuff
             }
         }
 
-        private bool TryParseMessage(
-          ref ReadOnlySequence<byte> buffer,
-          out Message message)
-        {
-            if (buffer.Length >= 9)
-            {
-                message = new Message(84, buffer.ToArray().ToList(), GetName(), (int)buffer.Length);
-                return true;
-            }
-            message = null;
-            return false;
-        }
+
         public IDisposable Subscribe(IObserver<Message> observer)
         {
             if (!observers.Contains(observer))
@@ -137,10 +138,12 @@ namespace DevStuff
         public void Reset()
         {
             cts.Cancel();
-            StopListenAsync().Wait();
+            pipe.Reader.CancelPendingRead();
+            pipe.Reader.Complete();
             pipe.Writer.CancelPendingFlush();
             pipe.Writer.Complete();
             pipe.Reset();
+            StopListenAsync().Wait();
             cts = new CancellationTokenSource();
             StartListenAsync().Wait();
         }

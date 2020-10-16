@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Buffers;
-using System.IO;
-using System.IO.Pipelines;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Autofac;
+using DevStuff.Constraints;
+using DevStuff.Handlers;
+using DevStuff.Interfcaces;
 
 namespace DevStuff
 {
     class Program
     {
-        public static async Task Main()
+        public static IContainer AutofacContainer()
         {
             var builder = new ContainerBuilder();
             builder.RegisterType<SimpleBus>().As<ISimpleBus<Message>>()
@@ -19,13 +18,18 @@ namespace DevStuff
                 .PropertiesAutowired(PropertyWiringOptions.AllowCircularDependencies);
             builder.RegisterType<TextHandler>();
             builder.RegisterType<SoundHandler>();
-            var container = builder.Build();
-            var bus = container.BeginLifetimeScope().Resolve<ISimpleBus<Message>>();
+            return builder.Build();
+        }
+        public static async Task Main()
+        {
+            var container = AutofacContainer();
+            var bus = container.BeginLifetimeScope()
+                .Resolve<ISimpleBus<Message>>();
             bus.Subscribe<TextHandler>(Commands.Text);
             bus.Subscribe<SoundHandler>(Commands.Sound);
             var ct = new Transport();
             bus.AddInput(ct);
-            bus.AddOutput(ct);
+            bus.AddOutput(new ConsoleOutput());
 
             await ct.StartListenAsync().ConfigureAwait(false);
             CancellationTokenSource cts = new CancellationTokenSource();
@@ -49,7 +53,9 @@ namespace DevStuff
                 else if (cki.Key.ToString() == nameof(ConsoleKey.Escape))
                 {
                     cts.Cancel();
+                    bus.Dispose();
                     ct.Dispose();
+                    container.Dispose();
                     break;
                 }
                 int input = cki.KeyChar;

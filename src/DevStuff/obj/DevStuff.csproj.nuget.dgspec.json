@@ -43,6 +43,10 @@
             "System.IO.Pipelines": {
               "target": "Package",
               "version": "[4.7.2, )"
+            },
+            "System.Memory": {
+              "target": "Package",
+              "version": "[4.5.4, )"
             }
           },
           "imports": [

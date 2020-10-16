@@ -4,6 +4,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Linq;
 using Autofac;
+using DevStuff.Constraints;
+using DevStuff.Interfcaces;
 
 namespace DevStuff
 {
@@ -11,9 +13,9 @@ namespace DevStuff
     {
         private readonly string AUTOFAC_SCOPE_NAME = "simple_bus";
         private readonly ILifetimeScope _autofac;
-        private readonly List<TransportObserver<Message>> observers = new List<TransportObserver<Message>>();
+        private readonly List<InputObserver<Message>> observers = new List<InputObserver<Message>>();
         private readonly List<IOutput> outputs = new List<IOutput>();
-        private readonly Dictionary<Commands, HashSet<SubscriptionInfo>> _handlers;
+        private readonly Dictionary<Commands, HashSet<SubscriptionInfo>> _handlers = new Dictionary<Commands, HashSet<SubscriptionInfo>>();
         private readonly Dictionary<Commands, byte> _commandTypes = Data.GetCommands();
         private bool isDisposed;
 
@@ -29,7 +31,7 @@ namespace DevStuff
             {
                 return;
             }
-            var tobserver = new TransportObserver<Message>(transport.GetName());
+            var tobserver = new InputObserver<Message>(transport.GetName());
             tobserver.Subscribe(transport);
             tobserver.NextReceived += OnNext;
             tobserver.Completed += OnCompleted;
@@ -79,6 +81,7 @@ namespace DevStuff
                         var handler = scope.Resolve(sub.HandlerType);
                         if (handler is null) continue;
                         var concreteType = typeof(IHandler<>).MakeGenericType(new Type[] { typeof(Message) });
+                        //Debug.WriteLine($"test: {Encoding.ASCII.GetString(eventArgs.Message.Body.ToArray())}");
                         await (Task)concreteType.GetMethod("HandleAsync").Invoke(handler, new object[] { eventArgs.Message, eventArgs.TransportName });
                     }
                     catch (Exception e)
@@ -94,7 +97,7 @@ namespace DevStuff
         }
         private void OnCompleted(object sender, EventArgs e)
         {
-            TransportObserver<Message> transport = (TransportObserver<Message>)sender;
+            InputObserver<Message> transport = (InputObserver<Message>)sender;
             transport.Unsubscribe();
             observers.Remove(transport);
         }
@@ -124,8 +127,10 @@ namespace DevStuff
                 }
                 else
                 {
-                    var hash = new HashSet<SubscriptionInfo>();
-                    hash.Add(SubscriptionInfo.Typed(typeof(THandler)));
+                    var hash = new HashSet<SubscriptionInfo>
+                    {
+                        SubscriptionInfo.Typed(typeof(THandler))
+                    };
                     _handlers.Add(command, hash);
                 }
             }

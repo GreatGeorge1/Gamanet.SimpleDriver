@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DevStuff
+namespace DevStuff.Constraints
 {
     public enum Commands
     {

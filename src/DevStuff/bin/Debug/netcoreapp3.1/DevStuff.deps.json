@@ -9,7 +9,8 @@
       "DevStuff/1.0.0": {
         "dependencies": {
           "Autofac": "6.0.0",
-          "System.IO.Pipelines": "4.7.2"
+          "System.IO.Pipelines": "4.7.2",
+          "System.Memory": "4.5.4"
         },
         "runtime": {
           "DevStuff.dll": {}
@@ -41,7 +42,8 @@
             "fileVersion": "4.700.20.21406"
           }
         }
-      }
+      },
+      "System.Memory/4.5.4": {}
     }
   },
   "libraries": {
@@ -70,6 +72,13 @@
       "sha512": "sha512-rGIIhoY3lUdn9rWeuGdgeZZ0P+SpJ1wZI5g8TnXqgvuhFgUP7iP9Nt5FZebYInQZQxqnwjPxdYYBE5l/8PJmqQ==",
       "path": "system.io.pipelines/4.7.2",
       "hashPath": "system.io.pipelines.4.7.2.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
     }
   }
 }

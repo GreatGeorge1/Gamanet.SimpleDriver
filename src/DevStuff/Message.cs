@@ -1,24 +1,43 @@
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using DevStuff.Constraints;
 
 namespace DevStuff
 {
     public class Message
     {
-        public Message(byte command, List<byte> body, string transportName, int length)
+        public Message(byte command, List<byte> body, string transportName, bool withCommand = true)
         {
-            Body = body.AsReadOnly() ?? throw new System.ArgumentNullException(nameof(body));
+            Body = body ?? throw new System.ArgumentNullException(nameof(body));
             Command = command;
             TransportName = transportName;
-            Length = length;
+            WithCommand = withCommand;
         }
-        public ReadOnlyCollection<byte> Body { get; protected set; }
+        public List<byte> Body { get; protected set; }
         public byte Command { get; protected set; }
         public string TransportName { get; protected set; }
-        public int Length { get; protected set; }
+        public bool WithCommand { get; }
+
         public byte[] ToArray()
         {
-            throw new System.NotImplementedException();
+            var list = new List<byte>();
+            if (WithCommand)
+            {
+                list.Add((byte)Protocol.StartByte);
+                list.Add(Command);
+                list.Add((byte)Protocol.Separator);
+                list.AddRange(Body);
+                list.Add((byte)Protocol.Separator);
+                list.Add((byte)Protocol.EndByte);
+            }
+            else
+            {
+                list.Add((byte)Protocol.StartByte);
+                list.Add((byte)Protocol.Separator);
+                list.AddRange(Body);
+                list.Add((byte)Protocol.Separator);
+                list.Add((byte)Protocol.EndByte);
+            }
+            return list.ToArray();
         }
     }
 }

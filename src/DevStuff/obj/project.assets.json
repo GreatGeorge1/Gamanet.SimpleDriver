@@ -31,6 +31,15 @@
         "runtime": {
           "lib/netcoreapp3.0/System.IO.Pipelines.dll": {}
         }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
       }
     }
   },
@@ -106,12 +115,36 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Autofac >= 6.0.0",
-      "System.IO.Pipelines >= 4.7.2"
+      "System.IO.Pipelines >= 4.7.2",
+      "System.Memory >= 4.5.4"
     ]
   },
   "packageFolders": {
@@ -156,6 +189,10 @@
           "System.IO.Pipelines": {
             "target": "Package",
             "version": "[4.7.2, )"
+          },
+          "System.Memory": {
+            "target": "Package",
+            "version": "[4.5.4, )"
           }
         },
         "imports": [
