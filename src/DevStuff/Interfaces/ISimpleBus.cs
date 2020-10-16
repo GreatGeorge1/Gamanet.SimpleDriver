@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using DevStuff.Constraints;
 
-namespace DevStuff.Interfcaces
+namespace DevStuff.Interfaces
 {
     public interface ISimpleBus<TMessage> : IDisposable
     {
