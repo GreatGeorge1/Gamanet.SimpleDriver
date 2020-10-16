@@ -115,6 +115,12 @@ namespace DevStuff
             await _output.WriteAsync(message.ToArray(), cancellationToken).ConfigureAwait(false);
         }
 
+        /// <summary>
+        /// Warning: Bus would fail on processing message
+        /// if handler type not registered in DI container
+        /// </summary>
+        /// <param name="command"></param>
+        /// <typeparam name="THandler"></typeparam>
         public void Subscribe<THandler>(Commands command) where THandler : IHandler<Message>
         {
             var res = _commandTypes.TryGetValue(command, out byte charByte);

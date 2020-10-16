@@ -23,27 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="644cea4d-51b0-448b-a727-2e27467a73ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamanet.SimpleDriver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamanet.SimpleDriver/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/Implementation/ConsoleOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Implementation/ConsoleOutput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DevStuff/Implementation/SimpleBus/SimpleBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Implementation/SimpleBus/SimpleBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/Implementation/Transport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Implementation/Transport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/Interfaces/IHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Interfaces/IHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/Interfaces/IInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Interfaces/IInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/Interfaces/IOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Interfaces/IOutput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/Interfaces/ISimpleBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Interfaces/ISimpleBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/TransportTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/TransportTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/DevStuff.dll" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/DevStuff.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/DevStuff.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/DevStuff.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/obj/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/obj/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/obj/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/obj/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/obj/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/obj/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602856511577</updated>
-      <workItem from="1602856519626" duration="10795000" />
+      <workItem from="1602856519626" duration="11095000" />
     </task>
     <servers />
   </component>
