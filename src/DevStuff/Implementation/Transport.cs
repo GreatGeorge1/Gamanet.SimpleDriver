@@ -8,16 +8,22 @@ using DevStuff.Interfaces;
 
 namespace DevStuff
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public partial class Transport : ITransport<Message>
     {
-        private readonly Parser parser = new Parser();
+        private readonly IParser<Message> parser;
         private bool isDisposed;
-        private readonly SemaphoreSlim semaphore = new SemaphoreSlim(1);
         private readonly Pipe pipe = new Pipe();
         private CancellationTokenSource cts = new CancellationTokenSource();
         private Task readPipeTask;
         private readonly List<IObserver<Message>> observers = new List<IObserver<Message>>();
 
+        public Transport(IParser<Message> parser)
+        {
+            this.parser = parser ?? throw new ArgumentNullException(nameof(parser));
+        }
         public void Dispose()
         {
             Dispose(true);
@@ -40,7 +46,6 @@ namespace DevStuff
                 }
             }
             observers.Clear();
-            semaphore.Dispose();
             isDisposed = true;
         }
 
@@ -135,6 +140,10 @@ namespace DevStuff
             return "default";
         }
 
+        /// <summary>
+        /// Resets buffers in Pipe and restarts StartListenAsync,
+        /// when user clears console input
+        /// </summary>
         public void Reset()
         {
             cts.Cancel();

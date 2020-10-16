@@ -27,7 +27,7 @@ namespace DevStuff
                 .Resolve<ISimpleBus<Message>>();
             bus.Subscribe<TextHandler>(Commands.Text);
             bus.Subscribe<SoundHandler>(Commands.Sound);
-            var ct = new Transport();
+            var ct = new Transport(new Parser());
             bus.AddInput(ct);
             bus.AddOutput(new ConsoleOutput());
 

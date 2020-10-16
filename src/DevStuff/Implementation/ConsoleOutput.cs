@@ -6,6 +6,9 @@ using DevStuff.Interfaces;
 
 namespace DevStuff
 {
+    /// <summary>
+    /// Simple output for use with message bus
+    /// </summary>
     public class ConsoleOutput : IOutput
     {
         public void Dispose()

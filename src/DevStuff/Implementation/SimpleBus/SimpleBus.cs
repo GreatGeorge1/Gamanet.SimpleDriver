@@ -78,15 +78,18 @@ namespace DevStuff
                 {
                     try
                     {
+                        //Here we resolve handler type from DI container
+                        //using subscriptionInfo
                         var handler = scope.Resolve(sub.HandlerType);
                         if (handler is null) continue;
+                        //Dynamic magic ;)
                         var concreteType = typeof(IHandler<>).MakeGenericType(new Type[] { typeof(Message) });
-                        //Debug.WriteLine($"test: {Encoding.ASCII.GetString(eventArgs.Message.Body.ToArray())}");
                         await (Task)concreteType.GetMethod("HandleAsync").Invoke(handler, new object[] { eventArgs.Message, eventArgs.TransportName });
                     }
                     catch (Exception e)
                     {
                         //TODO handling
+                        OnException(this, e);
                     }
                 }
             }
@@ -94,6 +97,7 @@ namespace DevStuff
         private void OnException(object sender, Exception exception)
         {
             //TODO smh
+            //Should be "Global" exception handler\interceptor
         }
         private void OnCompleted(object sender, EventArgs e)
         {

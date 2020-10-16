@@ -23,14 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="644cea4d-51b0-448b-a727-2e27467a73ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/MessageTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/SubscriptionInfoTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/TransportTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamanet.SimpleDriver/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamanet.SimpleDriver/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamanet.SimpleDriver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamanet.SimpleDriver/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gamanet.SimpleDriver.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Gamanet.SimpleDriver.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevStuff/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Message.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/Parser.Tests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/Implementation/ConsoleOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Implementation/ConsoleOutput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/Implementation/SimpleBus/SimpleBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Implementation/SimpleBus/SimpleBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/Implementation/Transport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Implementation/Transport.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/Interfaces/IHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Interfaces/IHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/Interfaces/IInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Interfaces/IInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/Interfaces/IOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Interfaces/IOutput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/Interfaces/ISimpleBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Interfaces/ISimpleBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/bin/Debug/netcoreapp3.1/DevStuff.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevStuff/obj/Debug/netcoreapp3.1/DevStuff.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/TransportTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/TransportTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/DevStuff.dll" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/DevStuff.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/DevStuff.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/DevStuff.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/bin/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/obj/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/obj/Debug/netcoreapp3.1/Gamanet.SimpleDriver.Tests.csprojAssemblyReference.cache" afterDir="false" />
@@ -55,9 +63,17 @@
         <option value="$PROJECT_DIR$/src/DevStuff/Implementation/Parser.cs" />
         <option value="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/Parser.Tests.cs" />
         <option value="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/SubscriptionInfoTests.cs" />
-        <option value="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/TransportTests.cs" />
         <option value="$PROJECT_DIR$/src/DevStuff/Message.cs" />
         <option value="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/MessageTests.cs" />
+        <option value="$PROJECT_DIR$/src/DevStuff/Program.cs" />
+        <option value="$PROJECT_DIR$/src/DevStuff/Implementation/Transport.cs" />
+        <option value="$PROJECT_DIR$/tests/Gamanet.SimpleDriver.Tests/TransportTests.cs" />
+        <option value="$PROJECT_DIR$/src/DevStuff/Interfaces/IHandler.cs" />
+        <option value="$PROJECT_DIR$/src/DevStuff/Interfaces/IInput.cs" />
+        <option value="$PROJECT_DIR$/src/DevStuff/Interfaces/IOutput.cs" />
+        <option value="$PROJECT_DIR$/src/DevStuff/Implementation/ConsoleOutput.cs" />
+        <option value="$PROJECT_DIR$/src/DevStuff/Interfaces/ISimpleBus.cs" />
+        <option value="$PROJECT_DIR$/src/DevStuff/Implementation/SimpleBus/SimpleBus.cs" />
       </list>
     </option>
   </component>
@@ -103,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602856511577</updated>
-      <workItem from="1602856519626" duration="8555000" />
+      <workItem from="1602856519626" duration="10795000" />
     </task>
     <servers />
   </component>
@@ -119,25 +135,25 @@
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 35% 425/655" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 36% 420/658" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 35% 425/655" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 22% 425/548" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 36% 420/658" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="src 23% 420/549" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 35% 425/655" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 22% 425/548" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="DevStuff 22% 425/548" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 36% 420/658" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="src 23% 420/549" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="DevStuff 23% 420/549" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 35% 425/655" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="src 22% 425/548" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="DevStuff 22% 425/548" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="DevStuff 22% 425/548" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 36% 420/658" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="src 23% 420/549" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="DevStuff 23% 420/549" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="DevStuff 23% 420/549" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
@@ -160,22 +176,22 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="374" key="GridCell.Tab.0.bottom" timestamp="1602863824264">
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1602866956055">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="374" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1680.1050@0.27.1920.1053" timestamp="1602863824264" />
-    <state width="1878" height="374" key="GridCell.Tab.0.center" timestamp="1602863824264">
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1680.1050@0.27.1920.1053" timestamp="1602866956055" />
+    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1602866956055">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="374" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1680.1050@0.27.1920.1053" timestamp="1602863824264" />
-    <state width="1878" height="374" key="GridCell.Tab.0.left" timestamp="1602863824264">
+    <state width="1878" height="281" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1680.1050@0.27.1920.1053" timestamp="1602866956055" />
+    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1602866956055">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="374" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1680.1050@0.27.1920.1053" timestamp="1602863824264" />
-    <state width="1878" height="374" key="GridCell.Tab.0.right" timestamp="1602863824264">
+    <state width="1878" height="281" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1680.1050@0.27.1920.1053" timestamp="1602866956055" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1602866956055">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="374" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1680.1050@0.27.1920.1053" timestamp="1602863824264" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1680.1050@0.27.1920.1053" timestamp="1602866956055" />
     <state width="1878" height="374" key="GridCell.Tab.1.bottom" timestamp="1602863824264">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -244,6 +260,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="204" y="276" width="1022" height="734" key="SettingsEditor/0.27.1920.1053/1920.0.1680.1050@0.27.1920.1053" timestamp="1602857637549" />
+    <state x="95" y="122" width="1730" height="863" key="VCS.FileHistoryDialog" timestamp="1602866326360">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="95" y="122" width="1730" height="863" key="VCS.FileHistoryDialog/0.27.1920.1053/1920.0.1680.1050@0.27.1920.1053" timestamp="1602866326360" />
     <state x="623" y="256" width="672" height="678" key="search.everywhere.popup" timestamp="1602857774186">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
