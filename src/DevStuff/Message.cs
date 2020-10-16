@@ -15,6 +15,9 @@ namespace DevStuff
         public List<byte> Body { get; protected set; }
         public byte Command { get; protected set; }
         public string TransportName { get; protected set; }
+        /// <summary>
+        /// Indicates command will be serialized on call ToArray
+        /// </summary>
         public bool WithCommand { get; }
 
         public byte[] ToArray()

@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Gamanet.SimpleDriver.Tests
 {
-    public class UnitTest1
+    public class ParserTests
     {
         [Fact]
         public void TryParse_Returns_True_And_Outputs_Message()

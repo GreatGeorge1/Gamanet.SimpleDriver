@@ -58,7 +58,10 @@
       <e p="tests" t="Include">
         <e p="Gamanet.SimpleDriver.Tests" t="IncludeRecursive">
           <e p="Gamanet.SimpleDriver.Tests.csproj" t="IncludeRecursive" />
-          <e p="UnitTest1.cs" t="Include" />
+          <e p="MessageTests.cs" t="Include" />
+          <e p="Parser.Tests.cs" t="Include" />
+          <e p="SubscriptionInfoTests.cs" t="Include" />
+          <e p="TransportTests.cs" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
