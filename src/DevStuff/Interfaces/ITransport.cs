@@ -1,4 +1,4 @@
-namespace DevStuff.Interfcaces
+namespace DevStuff.Interfaces
 {
     public interface ITransport<TMessage> : IInput<TMessage>, IOutput
     {

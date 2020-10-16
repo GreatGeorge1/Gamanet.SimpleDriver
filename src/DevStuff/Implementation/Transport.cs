@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO.Pipelines;
 using System.Threading;
 using System.Threading.Tasks;
-using DevStuff.Interfcaces;
+using DevStuff.Interfaces;
 
 namespace DevStuff
 {

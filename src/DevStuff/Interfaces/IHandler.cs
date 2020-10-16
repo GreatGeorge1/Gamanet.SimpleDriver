@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace DevStuff.Interfcaces
+namespace DevStuff.Interfaces
 {
     public interface IHandler<TMessage>
     {

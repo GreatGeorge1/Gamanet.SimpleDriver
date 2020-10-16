@@ -1,6 +1,5 @@
 using System;
-using DevStuff.Interfcaces;
-
+using DevStuff.Interfaces;
 namespace DevStuff
 {
     public partial class SimpleBus

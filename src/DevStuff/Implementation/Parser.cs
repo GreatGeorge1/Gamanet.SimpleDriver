@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using DevStuff.Constraints;
-using DevStuff.Interfcaces;
+using DevStuff.Interfaces;
 
 namespace DevStuff
 {

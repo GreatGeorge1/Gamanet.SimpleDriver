@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using Autofac;
 using DevStuff.Constraints;
-using DevStuff.Interfcaces;
+using DevStuff.Interfaces;
 
 namespace DevStuff
 {

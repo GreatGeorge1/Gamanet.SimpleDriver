@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace DevStuff.Interfcaces
+namespace DevStuff.Interfaces
 {
     public interface IInput<TMessage> : IDisposable, IObservable<TMessage>
     {

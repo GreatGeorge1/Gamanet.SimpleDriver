@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Autofac;
 using DevStuff.Constraints;
 using DevStuff.Handlers;
-using DevStuff.Interfcaces;
+using DevStuff.Interfaces;
 
 namespace DevStuff
 {
