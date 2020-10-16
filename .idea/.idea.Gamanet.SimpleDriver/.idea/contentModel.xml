@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_Gamanet.SimpleDriver.1642158809.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/16.5.0/build/netcoreapp2.1" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Gamanet.SimpleDriver.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src" t="Include">
+        <e p="DevStuff" t="IncludeRecursive">
+          <e p="Constraints" t="Include">
+            <e p="Commands.cs" t="Include" />
+            <e p="Protocol.cs" t="Include" />
+          </e>
+          <e p="DevStuff.csproj" t="IncludeRecursive" />
+          <e p="Handlers" t="Include">
+            <e p="SoundHandler.cs" t="Include" />
+            <e p="TextHandler.cs" t="Include" />
+          </e>
+          <e p="Implementation" t="Include">
+            <e p="ConsoleOutput.cs" t="Include" />
+            <e p="Parser.cs" t="Include" />
+            <e p="SimpleBus" t="Include">
+              <e p="SimpleBus.TransportMessageEventArgs.cs" t="Include" />
+              <e p="SimpleBus.TransportObserver.cs" t="Include" />
+              <e p="SimpleBus.cs" t="Include" />
+            </e>
+            <e p="Transport.Unsubscriber.cs" t="Include" />
+            <e p="Transport.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="IHandler.cs" t="Include" />
+            <e p="IInput.cs" t="Include" />
+            <e p="IOutput.cs" t="Include" />
+            <e p="IParser.cs" t="Include" />
+            <e p="ISimpleBus.cs" t="Include" />
+            <e p="ITransport.cs" t="Include" />
+          </e>
+          <e p="Message.cs" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="SubscriptionInfo.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="DevStuff.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="tests" t="Include">
+        <e p="Gamanet.SimpleDriver.Tests" t="IncludeRecursive">
+          <e p="Gamanet.SimpleDriver.Tests.csproj" t="IncludeRecursive" />
+          <e p="UnitTest1.cs" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Gamanet.SimpleDriver.Tests.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

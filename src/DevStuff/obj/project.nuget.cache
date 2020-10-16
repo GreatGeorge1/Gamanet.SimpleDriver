@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "bqooeoC2hqtB+qDaC+fOn3V5QY0DZsQujyU1MrXm0iy1j5nprbXM+5S8QZsDa27CHGG/X2ANWFywFnKI7ALFeQ==",
+  "success": true,
+  "projectFilePath": "/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/DevStuff.csproj",
+  "expectedPackageFiles": [
+    "/home/crunchy65/.nuget/packages/autofac/6.0.0/autofac.6.0.0.nupkg.sha512",
+    "/home/crunchy65/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "/home/crunchy65/.nuget/packages/system.io.pipelines/4.7.2/system.io.pipelines.4.7.2.nupkg.sha512",
+    "/home/crunchy65/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

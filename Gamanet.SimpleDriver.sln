@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1B83B96E-94A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevStuff", "src\DevStuff\DevStuff.csproj", "{46085296-C701-4A3A-8A53-02BE4D7C06ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CDB09867-FEE5-4819-8C00-8D7391308F6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamanet.SimpleDriver.Tests", "tests\Gamanet.SimpleDriver.Tests\Gamanet.SimpleDriver.Tests.csproj", "{7EF6213C-E770-416E-8373-23BAAB2528D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +36,21 @@ Global
 		{46085296-C701-4A3A-8A53-02BE4D7C06ED}.Release|x64.Build.0 = Release|Any CPU
 		{46085296-C701-4A3A-8A53-02BE4D7C06ED}.Release|x86.ActiveCfg = Release|Any CPU
 		{46085296-C701-4A3A-8A53-02BE4D7C06ED}.Release|x86.Build.0 = Release|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Debug|x64.Build.0 = Debug|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Debug|x86.Build.0 = Debug|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Release|x64.ActiveCfg = Release|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Release|x64.Build.0 = Release|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Release|x86.ActiveCfg = Release|Any CPU
+		{7EF6213C-E770-416E-8373-23BAAB2528D6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{46085296-C701-4A3A-8A53-02BE4D7C06ED} = {1B83B96E-94A5-45E1-8C7C-4B942169CECF}
+		{7EF6213C-E770-416E-8373-23BAAB2528D6} = {CDB09867-FEE5-4819-8C00-8D7391308F6A}
 	EndGlobalSection
 EndGlobal

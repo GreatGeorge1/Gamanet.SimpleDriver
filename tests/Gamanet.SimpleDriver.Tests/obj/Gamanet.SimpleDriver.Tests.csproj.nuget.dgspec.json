@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/crunchy65/Projects/Gamanet.SimpleDriver/tests/Gamanet.SimpleDriver.Tests/Gamanet.SimpleDriver.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/DevStuff.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/DevStuff.csproj",
+        "projectName": "DevStuff",
+        "projectPath": "/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/DevStuff.csproj",
+        "packagesPath": "/home/crunchy65/.nuget/packages/",
+        "outputPath": "/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/crunchy65/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.IO.Pipelines": {
+              "target": "Package",
+              "version": "[4.7.2, )"
+            },
+            "System.Memory": {
+              "target": "Package",
+              "version": "[4.5.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.1.108/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/crunchy65/Projects/Gamanet.SimpleDriver/tests/Gamanet.SimpleDriver.Tests/Gamanet.SimpleDriver.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/crunchy65/Projects/Gamanet.SimpleDriver/tests/Gamanet.SimpleDriver.Tests/Gamanet.SimpleDriver.Tests.csproj",
+        "projectName": "Gamanet.SimpleDriver.Tests",
+        "projectPath": "/home/crunchy65/Projects/Gamanet.SimpleDriver/tests/Gamanet.SimpleDriver.Tests/Gamanet.SimpleDriver.Tests.csproj",
+        "packagesPath": "/home/crunchy65/.nuget/packages/",
+        "outputPath": "/home/crunchy65/Projects/Gamanet.SimpleDriver/tests/Gamanet.SimpleDriver.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/crunchy65/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/DevStuff.csproj": {
+                "projectPath": "/home/crunchy65/Projects/Gamanet.SimpleDriver/src/DevStuff/DevStuff.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.14.7, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.1.108/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
